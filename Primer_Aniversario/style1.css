@@ -1,0 +1,67 @@
+:root{
+    --primary: #fff;
+    --bg-color: linear-gradient(180deg, #4585ca, #39c1e7, #79d3ece5);
+    --bg-envelope-color: #e0d0b0;
+    --envelope-tab: #ffffcf;
+    --border-envelope-tap: #444;
+    --envelope-cover: #fef8c4;
+    --border--envelope-cover: #444;
+    --shadow-color: rgb(78, 95, 101);
+    --txt-color: #000000;
+    --heart-color: rgb(19, 174, 241);
+  }
+  body {
+    margin: 0; /* Elimina los márgenes del navegador */
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--bg-color); /* Aplica el degradado como fondo */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura */
+    width: 100vw; /* Asegura que el fondo cubra toda la anchura */
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-regreso {
+    position: fixed; /* Fija el botón en la pantalla */
+    bottom: 20px;    /* Distancia desde la parte inferior */
+    right: 20px;     /* Distancia desde el lado derecho */
+    padding: 10px 15px; /* Tamaño del botón */
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Elimina subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 14px; /* Tamaño del texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+}
+
+.btn-regreso:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el cursor */
+}
+.cinta-pelicula {
+    position: absolute; /* Para posicionar en la página */
+    top: 0px; /* Espaciado desde la parte superior */
+    right: 150px; /* Espaciado desde la parte derecha */
+    display: flex; /* Flexbox para controlar la dirección */
+    flex-direction: column; /* Apilar imágenes verticalmente */
+    align-items: center; /* Centrar imágenes dentro del contenedor */
+    padding: 20px; /* Espaciado interno para estética */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    border: 2px solid #000; /* Borde negro */
+    border-radius: 0px; /* Bordes redondeados */
+}
+
+.cinta-pelicula img {
+    width: 158px; /* Ancho de cada imagen */
+    height: auto; /* Mantener proporción de las imágenes */
+    margin-bottom: 10px; /* Espaciado entre imágenes */
+    border: 6px solid white; /* Borde blanco para estilo de película */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para efecto tridimensional */
+    transition: transform 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.cinta-pelicula img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+}
+

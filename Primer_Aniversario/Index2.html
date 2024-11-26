@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Estilo para el título */
+        .title {
+            text-align: center;
+            font-size: 40px;
+            color: #000000; 
+            position: absolute; 
+            top: 75px; 
+            left: 50%; 
+            transform: translateX(-50%);
+            margin: 0;
+            z-index: 1000; 
+        }
+        .subtitle{
+            text-align: center;
+            font-size: 18px;
+            color: #000000;
+            position: absolute;
+            top: 135px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            z-index: 1000; 
+        }
+        .container {
+            margin-top: 80px; 
+        }
+    </style>
+</head>
+
+<body> 
+    <h1 class="title">Feliz Aniversario Mi Amor Bonito</h1> 
+    <p class="subtitle">Toque el corazón azul</p>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Amado mío 💙:</strong>
+                        <p>
+                            Cada día con usted, me enseña lo valioso que es el amor, la comprensión y la paciencia que me regala.
+                            Gracias por ser una bendición en mi vida y mi apoyo incondicional. Feliz aniversario esposo mío. 
+                            Lo amo con todo mi ser.
+                            <h4><Center>Mi Brei. 💙</Center></h4>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+    <a href="Index3.html" class="btn-regreso">Ver Galería</a>
+</body>
+</html>
